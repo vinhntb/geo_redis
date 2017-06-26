@@ -1,0 +1,1 @@
+-e git://github.com/andymccurdy/redis-py.git#egg=redis

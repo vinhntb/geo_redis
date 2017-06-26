@@ -1,0 +1,12 @@
+app:
+  build: .
+  container_name: georedis_app
+  links:
+    - redis:redisdb
+  volumes:
+    - .:/data/app
+  command: tail -f /dev/null
+
+redis:
+  image: redis:3.2
+  container_name: georedis_redis
