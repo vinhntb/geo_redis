@@ -13,7 +13,7 @@ from redis.client import Redis
 
 def connection_redis():
     conf = {
-        'host': 'redisdb',
+        'host': 'redisdb',  # This is special hostname defined at docker-compose
         'port': '6379',
         'db': 0
     }
