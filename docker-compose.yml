@@ -5,7 +5,7 @@ app:
     - redis:redisdb
   volumes:
     - .:/data/app
-  command: bash docker-runserver.sh
+  command: bash runserver.sh
 
 redis:
   image: redis:3.2
